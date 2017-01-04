@@ -1,15 +1,10 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports['is-touch'] = undefined;
+module.exports = utils;
+module.exports['default'] = utils;
 
-var _isTouch = require('./lib/is-touch');
-var isTouch = _isTouch.default;
+var isTouch = require('./is-touch').default;
 
-exports['is-touch'] = isTouch
-
-// exports.default = function () {
-//   return {
-//     'is-touch': isTouch
-//   }
-// }
+function utils(base, props, statuses) {
+  return {
+    isTouch: isTouch
+  };
+};
