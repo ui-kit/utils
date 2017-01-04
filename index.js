@@ -1,8 +1,15 @@
-import isTouch from './lib/is-touch'
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports['is-touch'] = undefined;
 
-module.exports = utils;
-module.exports['default'] = utils;
+var _isTouch = require('./lib/is-touch');
+var isTouch = _isTouch.default;
 
-var utils = {
-  'is-touch': isTouch
-};
+exports['is-touch'] = isTouch
+
+// exports.default = function () {
+//   return {
+//     'is-touch': isTouch
+//   }
+// }
