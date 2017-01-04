@@ -1,0 +1,9 @@
+{
+  "name": "ui-kit-utils",
+  "version": "1.0.1",
+  "description": "A collection of useful utility functions",
+  "main": "index.js",
+  "repository": "git@github.com:ui-kit/utils.git",
+  "author": "Jake Richan <jake.richan@gmail.com>",
+  "license": "MIT"
+}
