@@ -3,5 +3,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+  return (
+    ('ontouchstart' in global) ||
+    global.DocumentTouch &&
+    document instanceof global.DocumentTouch
+  ) || navigator.msMaxTouchPoints || false;
 }

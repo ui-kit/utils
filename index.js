@@ -1,9 +1,11 @@
 var isTouch = require('./is-touch');
+var isMobile = require('./is-mobile');
 var getOffset = require('./get-offset');
 
 var utils = {
-  isTouch: isTouch.default
-  getOffset: getOffset.default;
+  isMobile: isMobile.default,
+  isTouch: isTouch.default,
+  getOffset: getOffset.default
 };
 
 module.exports = utils;
